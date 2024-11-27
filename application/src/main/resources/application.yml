@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: application
+
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=bookstore;trustServerCertificate=true;sendStringParametersAsUnicode=false;
+    username: sa
+    password: test#1234
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  jpa:
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc.batch_size: 30
+        order_inserts: true
+        order_updates: true
+        generate_statistics: false
+        dialect: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: create
+
+#order:
+#  repository:
+#    type: "memory"
