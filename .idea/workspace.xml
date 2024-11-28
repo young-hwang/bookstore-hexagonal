@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dc017af7-7540-432b-b625-bc6fd57a3dfc" name="Changes" comment="fix: repository lazy loading error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/order/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/order/OrderMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +298,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732673808070</updated>
-      <workItem from="1732673812459" duration="39067000" />
+      <workItem from="1732673812459" duration="40363000" />
     </task>
     <task id="LOCAL-00001" summary="add: init">
       <option name="closed" value="true" />
@@ -325,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732782220331</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix: repository lazy loading error">
+      <option name="closed" value="true" />
+      <created>1732782674063</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732782674063</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
