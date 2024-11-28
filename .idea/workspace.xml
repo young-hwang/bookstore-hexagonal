@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc017af7-7540-432b-b625-bc6fd57a3dfc" name="Changes" comment="add: init">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="dc017af7-7540-432b-b625-bc6fd57a3dfc" name="Changes" comment="fix: repository lazy loading error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/me/bookstore/application/config/OrderServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/me/bookstore/application/config/OrderServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/me/bookstore/domain/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/me/bookstore/domain/order/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/book/BookRepositoryInMemoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/me/bookstore/application/repository/BookRepositoryInMemoryAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/book/BookRepositoryJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/book/BookRepositoryJpaAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/order/OrderRepositoryInMemoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/me/bookstore/application/repository/OrderRepositoryInMemoryAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/order/OrderRepositoryJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/order/OrderRepositoryJpaAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/me/bookstore/presentation/PresentationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/me/bookstore/PresentationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/order/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/order/OrderMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +128,7 @@
     "Spring Boot.ApplcationApplication.executor": "Run",
     "Spring Boot.ApplicationApplication.executor": "Run",
     "Spring Boot.DomainApplication (1).executor": "Debug",
-    "Spring Boot.PresentationApplication.executor": "Run",
+    "Spring Boot.PresentationApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -309,7 +299,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732673808070</updated>
-      <workItem from="1732673812459" duration="33733000" />
+      <workItem from="1732673812459" duration="39067000" />
     </task>
     <task id="LOCAL-00001" summary="add: init">
       <option name="closed" value="true" />
@@ -319,7 +309,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732699764705</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add: default repository &amp; rest controller">
+      <option name="closed" value="true" />
+      <created>1732777276003</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732777276003</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: repository lazy loading error">
+      <option name="closed" value="true" />
+      <created>1732782220331</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732782220331</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +344,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add: init" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: init" />
+    <MESSAGE value="add: default repository &amp; rest controller" />
+    <MESSAGE value="fix: repository lazy loading error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: repository lazy loading error" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/domain/src/main/java/me/bookstore/domain/order/service/OrderService.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

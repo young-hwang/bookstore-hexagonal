@@ -7,6 +7,8 @@ import me.bookstore.domain.order.repository.OrderRepository;
 import me.bookstore.domain.user.model.UserId;
 import org.springframework.stereotype.Repository;
 
+import java.io.Console;
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -26,13 +28,14 @@ public class OrderRepositoryJpaAdapter implements OrderRepository {
 
     @Override
     public Optional<Order> findById(OrderId orderId) {
-        return orderJpaRepository.findById(orderId.id())
-            .map(orderMapper::toDomain);
+        System.out.println("findById Order");
+        return orderJpaRepository.findByIdWithOrderLines(orderId.id())
+                .map(orderMapper::toDomain);
     }
 
     @Override
     public void delete(OrderId orderId) {
-         orderJpaRepository.deleteById(orderId.id());
+        orderJpaRepository.deleteById(orderId.id());
     }
 
     @Override

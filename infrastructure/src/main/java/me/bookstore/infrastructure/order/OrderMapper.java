@@ -17,7 +17,7 @@ public class OrderMapper {
         return new Order(
             new OrderId(entity.getId()),
             new UserId(entity.getUserId()),
-            entity.getOrderLines().stream().map(this::toDomain).collect(Collectors.toList())
+                entity.getOrderLines().stream().map(this::toDomain).collect(Collectors.toList())
         );
     }
 

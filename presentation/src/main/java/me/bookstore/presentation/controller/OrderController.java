@@ -32,7 +32,7 @@ public class OrderController {
         return new ResponseEntity<>(orderId, HttpStatus.CREATED);
     }
 
-    @GetMapping("/{orderId}")
+    @GetMapping("orders/{orderId}")
     public ResponseEntity<Order> getOrderById(@PathVariable Long orderId) {
         Optional<Order> order = retrieveOrderService.getOrderById(new OrderId(orderId));
         return order.map(ResponseEntity::ok)
