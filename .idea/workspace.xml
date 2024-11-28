@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc017af7-7540-432b-b625-bc6fd57a3dfc" name="Changes" comment="" />
+    <list default="true" id="dc017af7-7540-432b-b625-bc6fd57a3dfc" name="Changes" comment="add: init">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/me/bookstore/application/config/OrderServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/me/bookstore/application/config/OrderServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/me/bookstore/domain/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/me/bookstore/domain/order/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/book/BookRepositoryInMemoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/me/bookstore/application/repository/BookRepositoryInMemoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/book/BookRepositoryJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/book/BookRepositoryJpaAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/order/OrderRepositoryInMemoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/me/bookstore/application/repository/OrderRepositoryInMemoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/order/OrderRepositoryJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/me/bookstore/infrastructure/order/OrderRepositoryJpaAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/me/bookstore/presentation/PresentationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/me/bookstore/PresentationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,54 +68,20 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="bookstore-hexagonal" type="f1a62948:ProjectNode" />
-                <item name="application" type="2d1252cf:ModuleNode" />
+                <item name="presentation" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="bookstore-hexagonal" type="f1a62948:ProjectNode" />
-                <item name="application" type="2d1252cf:ModuleNode" />
+                <item name="presentation" type="2d1252cf:ModuleNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="bookstore-hexagonal" type="f1a62948:ProjectNode" />
-                <item name="infrastructure" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="bookstore-hexagonal" type="f1a62948:ProjectNode" />
-                <item name="infrastructure" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="bookstore-hexagonal" type="f1a62948:ProjectNode" />
-                <item name="infrastructure" type="2d1252cf:ModuleNode" />
+                <item name="presentation" type="2d1252cf:ModuleNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
                 <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="bookstore-hexagonal" type="f1a62948:ProjectNode" />
-                <item name="infrastructure" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.springframework.boot:spring-boot-starter-data-jpa:3.4.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="bookstore-hexagonal" type="f1a62948:ProjectNode" />
-                <item name="infrastructure" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="bookstore-hexagonal" type="f1a62948:ProjectNode" />
-                <item name="infrastructure" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.springframework.boot:spring-boot-starter-data-jpa:3.4.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -115,10 +94,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -152,9 +134,12 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ApplcationApplication.executor": "Run",
-    "Spring Boot.ApplicationApplication.executor": "Debug",
+    "Spring Boot.ApplicationApplication.executor": "Run",
     "Spring Boot.DomainApplication (1).executor": "Debug",
+    "Spring Boot.PresentationApplication.executor": "Run",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -188,7 +173,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApplicationApplication">
+  <component name="RunManager" selected="Spring Boot.PresentationApplication">
     <configuration name="DomainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.bookstore.domain.DomainApplication" />
       <module name="bookstore-hexagonal.domain.main" />
@@ -294,7 +279,7 @@
     </configuration>
     <configuration name="PresentationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="bookstore-hexagonal.presentation.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="me.bookstore.presentation.PresentationApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="me.bookstore.PresentationApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -324,23 +309,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732673808070</updated>
-      <workItem from="1732673812459" duration="21016000" />
+      <workItem from="1732673812459" duration="33733000" />
     </task>
+    <task id="LOCAL-00001" summary="add: init">
+      <option name="closed" value="true" />
+      <created>1732699764705</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732699764705</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/application/src/main/java/me/bookstore/application/config/OrderServiceConfig.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add: init" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: init" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,10 +1,9 @@
-package me.bookstore.infrastructure.order;
+package me.bookstore.application.repository;
 
 import me.bookstore.domain.order.model.Order;
 import me.bookstore.domain.order.model.OrderId;
 import me.bookstore.domain.order.repository.OrderRepository;
 import me.bookstore.domain.user.model.UserId;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Repository;
 
@@ -14,8 +13,6 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Repository
-@ConditionalOnProperty(name = "order.repository.type", havingValue = "memory", matchIfMissing = true)
 public class OrderRepositoryInMemoryAdapter implements OrderRepository {
     private final Map<Long, Order> store = new HashMap<>();
 

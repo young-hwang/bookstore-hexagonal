@@ -1,25 +1,37 @@
 package me.bookstore.application.config;
 
 import lombok.RequiredArgsConstructor;
+import me.bookstore.application.repository.BookRepositoryInMemoryAdapter;
+import me.bookstore.application.repository.OrderRepositoryInMemoryAdapter;
 import me.bookstore.domain.book.repository.BookRepository;
 import me.bookstore.domain.order.repository.OrderRepository;
 import me.bookstore.domain.order.service.OrderService;
-import me.bookstore.infrastructure.order.OrderJpaRepository;
-import me.bookstore.infrastructure.order.OrderMapper;
-import me.bookstore.infrastructure.order.OrderRepositoryInMemoryAdapter;
-import me.bookstore.infrastructure.order.OrderRepositoryJpaAdapter;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Repository;
 
 @RequiredArgsConstructor
 @Configuration
 public class OrderServiceConfig {
-    private final OrderRepository orderRepository;
-    private final BookRepository bookRepository;
+    @Bean
+    @ConditionalOnMissingBean(OrderRepository.class)
+    public OrderRepository orderRepository() {
+        System.out.println("Create OrderRepository");
+        return new OrderRepositoryInMemoryAdapter();
+    }
 
     @Bean
-    public OrderService orderService() {
+    @ConditionalOnMissingBean(BookRepository.class)
+    public BookRepository bookRepository() {
+        System.out.println("Create BookRepository");
+        return new BookRepositoryInMemoryAdapter();
+    }
+
+    @Bean
+    public OrderService orderService(OrderRepository orderRepository, BookRepository bookRepository) {
+        System.out.println("OrderRepository: " + orderRepository.getClass().getName());
         return new OrderService(orderRepository, bookRepository);
     }
+
 }

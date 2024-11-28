@@ -1,12 +1,8 @@
-package me.bookstore.infrastructure.book;
+package me.bookstore.application.repository;
 
-import lombok.RequiredArgsConstructor;
 import me.bookstore.domain.book.model.Book;
 import me.bookstore.domain.book.model.BookId;
 import me.bookstore.domain.book.repository.BookRepository;
-import me.bookstore.domain.order.model.Order;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.List;
@@ -14,9 +10,6 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@RequiredArgsConstructor
-@Repository
-@ConditionalOnProperty(name = "order.repository.type", havingValue = "memory", matchIfMissing = true)
 public class BookRepositoryInMemoryAdapter implements BookRepository {
     private final Map<Long, Book> books = new HashMap<>();
 

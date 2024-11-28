@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import me.bookstore.domain.book.model.Book;
 import me.bookstore.domain.book.model.BookId;
 import me.bookstore.domain.book.repository.BookRepository;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -13,7 +12,6 @@ import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Repository
-@ConditionalOnProperty(name = "order.repository.type", havingValue = "jpa")
 public class BookRepositoryJpaAdapter implements BookRepository {
     private final BookJpaRepository bookJpaRepository;
     private final BookMapper bookMapper;

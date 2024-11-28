@@ -24,8 +24,11 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":domain"))
     implementation(project(":application"))
+    implementation(project(":infrastructure"))
     implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")

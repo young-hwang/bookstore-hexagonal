@@ -11,6 +11,7 @@ import me.bookstore.domain.order.repository.OrderRepository;
 import me.bookstore.domain.user.model.UserId;
 
 import java.util.List;
+import java.util.Optional;
 
 @RequiredArgsConstructor
 public class OrderService {
@@ -28,5 +29,9 @@ public class OrderService {
         }
         Order order = new Order(id, userId, orderLines);
         return orderRepository.save(order);
+    }
+
+    public Optional<Order> getOrderById(OrderId orderId) {
+        return orderRepository.findById(orderId);
     }
 }
